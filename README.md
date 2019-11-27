@@ -35,5 +35,5 @@ $ docker run -v `pwd`:/work inajob1/logue-sdk-docker sh -c "cd logue-sdk/platfor
 
 ```
 $ git clone https://github.com/korginc/logue-sdk.git
-docker run  -v /`pwd`:/work inajob1/logue-sdk-docker sh -c "cd logue-sdk/platform/nutekt-digital/demos/waves && make"
+$ docker run  -v /`pwd`:/work inajob1/logue-sdk-docker sh -c "cd logue-sdk/platform/nutekt-digital/demos/waves && make"
 ```
