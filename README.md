@@ -13,7 +13,7 @@ git, dockerがあればLinux, macOS, Windowsで動作するはずです。
 
 ## Docker image
 
-- https://hub.docker.com/r/kinadu/logue-sdk-docker
+- https://hub.docker.com/r/inajob1/logue-sdk-docker
 
 ## How to use?
 
@@ -21,12 +21,19 @@ git, dockerがあればLinux, macOS, Windowsで動作するはずです。
 
 ```
 $ git clone https://github.com/korginc/logue-sdk.git
-$ docker run -v `pwd`:/work kinadu/logue-sdk-docker sh -c "cd logue-sdk/platform/nutekt-digital/demos/waves && make"
+$ docker run -v `pwd`:/work inajob1/logue-sdk-docker sh -c "cd logue-sdk/platform/nutekt-digital/demos/waves && make"
+```
+
+**Windows + Command Prompt**
+
+```
+> git clone https://github.com/korginc/logue-sdk.git
+> docker run -v :/work inajob1/logue-sdk-docker sh -c "cd logue-sdk/platform/nutekt-digital/demos/waves && make"
 ```
 
 **Windows + Git Bash**
 
 ```
 $ git clone https://github.com/korginc/logue-sdk.git
-docker run  -v /`pwd`:/work kinadu/logue-sdk-docker sh -c "cd logue-sdk/platform/nutekt-digital/demos/waves && make"
+docker run  -v /`pwd`:/work inajob1/logue-sdk-docker sh -c "cd logue-sdk/platform/nutekt-digital/demos/waves && make"
 ```
